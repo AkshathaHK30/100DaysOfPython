@@ -19,6 +19,11 @@ symbol_str = ''.join(random.choice(symbols) for i in range(nr_symbols))
 # print(symbol_str)
 random_password = letter_str+number_str+symbol_str
 shuffled = ''.join(random.sample(random_password, len(random_password)))
+'''
+Shuffle the letters:
+random.sample(word, len(word)) creates a new list with all the letters from the word, but in a random order.
+''.join(...) joins the letters in the shuffled list back into a string.
+'''
 # random.shuffle(random_password)
 print(f"Your Password is {shuffled}")
 #Hard Level - Order of characters randomised:
